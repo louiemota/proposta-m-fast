@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>M Fast · Como organizar Facebook, Instagram e anúncios na Meta</title>
+<meta name="description" content="Passo a passo da Zeus Agência Digital para a M Fast organizar Página, Instagram e conta de anúncios na Meta e liberar o acesso da agência.">
+<meta name="robots" content="noindex">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap');
+:root{--bg:#0b0b0d;--panel:#141417;--ink:#f6f6f3;--muted:#b9b9bf;--red:#ef321f;--line:#303035;--ok:#3ecf8e}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 Barlow,Arial,sans-serif}
+a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:3px}
+a:hover{color:var(--red)}
+header{height:80px;padding:0 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#0b0b0df5;position:sticky;top:0;z-index:20}
+.brand{font:800 30px/.85 'Barlow Condensed',sans-serif;letter-spacing:.04em;text-decoration:none}
+.brand span{display:block;font:600 9px/1.5 Barlow,sans-serif;letter-spacing:.15em;margin-top:7px}
+header .who{font-size:14px;color:var(--muted)}
+main{max-width:880px;margin:0 auto;padding:0 6%}
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;line-height:1;letter-spacing:-.01em;margin:0 0 20px}
+h1{font-size:clamp(46px,7vw,82px)}
+h2{font-size:clamp(34px,4.6vw,52px)}
+h3{font-size:26px;margin-top:34px}
+h1 em,h2 em{font-style:normal;color:var(--red)}
+p{color:var(--muted);margin:0 0 18px}
+p strong,li strong{color:var(--ink)}
+.eyebrow{font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--red);margin-bottom:18px;text-transform:uppercase}
+.intro{font-size:21px}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:22px 0}
+ol.steps>li{counter-increment:s;position:relative;padding:0 0 18px 52px;color:var(--muted)}
+ol.steps>li::before{content:counter(s);position:absolute;left:0;top:-2px;width:34px;height:34px;border:1px solid var(--red);color:var(--ink);font:700 18px/32px 'Barlow Condensed';text-align:center}
+ul{color:var(--muted);padding-left:22px}
+ul li{margin-bottom:8px}
+.box{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--red);padding:20px 24px;margin:26px 0}
+.box p:last-child{margin-bottom:0}
+.box.ok{border-left-color:var(--ok)}
+.box .t{display:block;font:700 13px/1.4 Barlow;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin-bottom:8px}
+.btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font-weight:700;padding:12px 20px;margin:4px 0 8px}
+.btn:hover{color:#fff;filter:brightness(1.1)}
+.id{display:flex;flex-wrap:wrap;align-items:center;gap:14px;background:#1c1c20;border:1px dashed var(--red);padding:18px 22px;margin:18px 0}
+.id code{font:700 30px/1 'Barlow Condensed',monospace;letter-spacing:.06em;color:var(--ink)}
+.id button{background:transparent;border:1px solid #666;color:var(--ink);font:600 14px Barlow;padding:8px 14px;cursor:pointer}
+.id button:hover{border-color:var(--red)}
+.path{display:inline-block;background:#1c1c20;border:1px solid var(--line);padding:2px 8px;color:var(--ink);font-size:16px}
+.toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;margin:28px 0 0;padding:0;list-style:none}
+.toc a{display:block;background:var(--panel);border:1px solid var(--line);padding:14px 16px;text-decoration:none;font-weight:600;font-size:16px}
+.toc a span{color:var(--red);margin-right:8px}
+.toc a:hover{border-color:var(--red);color:var(--ink)}
+.check{list-style:none;padding:0}
+.check li{padding-left:34px;position:relative;margin-bottom:12px}
+.check li::before{content:"";position:absolute;left:0;top:5px;width:18px;height:18px;border:2px solid var(--ok)}
+table{width:100%;border-collapse:collapse;margin:20px 0;font-size:16px}
+td{border-top:1px solid var(--line);padding:12px 10px 12px 0;vertical-align:top;color:var(--muted)}
+td:first-child{color:var(--ink);font-weight:600;width:42%}
+footer{max-width:880px;margin:0 auto;padding:40px 6% 70px;color:var(--muted);font-size:15px}
+@media(max-width:560px){body{font-size:17px}header{height:68px}header .who{display:none}section{padding:48px 0}ol.steps>li{padding-left:46px}.id code{font-size:25px}}
+@media print{header{position:static}body{background:#fff;color:#000}p,li,td,ul{color:#222!important}.box,.id,.toc a{background:#f4f4f4}}
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="https://zeusagenciadigital.com" style="color:var(--ink)">ZEUS<span>AGÊNCIA DIGITAL</span></a>
+  <div class="who">Guia preparado para a M Fast</div>
+</header>
+<main>
+
+<section>
+  <div class="eyebrow">Passo a passo · Facebook, Instagram e anúncios</div>
+  <h1>Deixando a M Fast <em>pronta para anunciar</em> na Meta</h1>
+  <p class="intro">Este guia mostra como reunir a Página do Facebook, o Instagram e a conta de anúncios da oficina em um só lugar e, no final, liberar o acesso da Zeus para cuidarmos das campanhas.</p>
+  <p>Tudo continua em nome da M Fast. A Zeus recebe apenas permissão para trabalhar, e vocês podem tirar esse acesso quando quiserem. <strong>Não precisa enviar senha nenhuma para a gente.</strong></p>
+  <p>Leva de 20 a 40 minutos. Se travar em qualquer etapa, manda um print pra gente que resolvemos juntos.</p>
+  <ul class="toc">
+    <li><a href="#antes"><span>0</span>Antes de começar</a></li>
+    <li><a href="#portfolio"><span>1</span>Criar a “casa” da empresa</a></li>
+    <li><a href="#pagina"><span>2</span>Página do Facebook</a></li>
+    <li><a href="#instagram"><span>3</span>Instagram</a></li>
+    <li><a href="#anuncios"><span>4</span>Conta de anúncios e pagamento</a></li>
+    <li><a href="#zeus"><span>5</span>Liberar o acesso da Zeus</a></li>
+    <li><a href="#conferir"><span>6</span>Conferir e avisar a gente</a></li>
+    <li><a href="#problemas"><span>?</span>Se algo não aparecer</a></li>
+  </ul>
+</section>
+
+<section id="antes">
+  <div class="eyebrow">Etapa 0</div>
+  <h2>Antes de começar</h2>
+  <ul class="check">
+    <li><strong>Use o computador</strong>, de preferência no Google Chrome. Pelo celular várias dessas opções ficam escondidas.</li>
+    <li><strong>Entre com o Facebook pessoal de quem é dono da oficina</strong> (Gilberto ou Barbara). É esse perfil que vai ficar como responsável principal. O ideal é que as duas pessoas tenham acesso, assim ninguém fica refém de um único perfil.</li>
+    <li><strong>Tenha em mãos o login do Instagram da M Fast</strong>, porque ele vai ser pedido na Etapa 3.</li>
+    <li><strong>Ative a verificação em duas etapas no Facebook</strong> (aquele código que chega no celular). A Meta exige isso para compartilhar acessos com agências. Dá pra ativar aqui: <a href="https://accountscenter.facebook.com/password_and_security" target="_blank" rel="noopener">Central de Contas → Senha e segurança</a>.</li>
+  </ul>
+  <div class="box">
+    <span class="t">Um nome que vai aparecer bastante</span>
+    <p>A Meta chama a “casa” da empresa de <strong>portfólio empresarial</strong>. Muita gente ainda conhece como <strong>Business Manager</strong> ou <strong>BM</strong>. É a mesma coisa: o lugar onde ficam guardados a Página, o Instagram e a conta de anúncios da oficina.</p>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="eyebrow">Etapa 1</div>
+  <h2>Criar a “casa” da empresa na Meta</h2>
+  <p>Primeiro vale conferir se a M Fast já tem uma. Abra o link abaixo:</p>
+  <a class="btn" href="https://business.facebook.com/latest/settings" target="_blank" rel="noopener">Abrir as configurações da Meta</a>
+  <p>No canto superior esquerdo aparece o nome da empresa selecionada. Clique nele e veja a lista. <strong>Se já existir uma com o nome da M Fast, pule para a Etapa 2.</strong> Se não existir, crie assim:</p>
+  <ol class="steps">
+    <li>Acesse <a href="https://business.facebook.com" target="_blank" rel="noopener">business.facebook.com</a> e entre com o Facebook do dono.</li>
+    <li>Clique no menu que fica embaixo de <strong>Página inicial</strong>, no canto superior esquerdo.</li>
+    <li>Clique em <strong>Criar um portfólio empresarial</strong>.</li>
+    <li>Coloque o nome da oficina, do jeito que o público conhece: <strong>M Fast</strong>. Evite símbolos e caracteres especiais, a Meta não aceita.</li>
+    <li>Preencha nome, sobrenome e o <strong>e-mail da empresa</strong>. Esse e-mail recebe os avisos da Meta e não aparece para clientes.</li>
+    <li>Clique em <strong>Criar</strong>. Vai chegar um e-mail de confirmação. Abra e confirme.</li>
+  </ol>
+  <div class="box">
+    <span class="t">Importante</span>
+    <p>Cada pessoa só pode criar duas dessas “casas”. Então crie uma só e com calma.</p>
+  </div>
+  <p><a href="https://pt-br.facebook.com/business/help/1710077379203657" target="_blank" rel="noopener">Explicação oficial da Meta sobre esta etapa</a></p>
+</section>
+
+<section id="pagina">
+  <div class="eyebrow">Etapa 2</div>
+  <h2>Colocar a Página do Facebook dentro</h2>
+  <h3>Se a M Fast ainda não tem Página no Facebook</h3>
+  <p>Crie por aqui, com o nome da oficina, categoria de oficina mecânica, endereço, telefone e horário:</p>
+  <a class="btn" href="https://www.facebook.com/pages/create" target="_blank" rel="noopener">Criar Página do Facebook</a>
+  <h3>Com a Página pronta, adicione na casa da empresa</h3>
+  <ol class="steps">
+    <li>Abra as <a href="https://business.facebook.com/latest/settings" target="_blank" rel="noopener">configurações da Meta</a> e confira se a M Fast está selecionada no canto superior esquerdo.</li>
+    <li>No menu da esquerda, em <strong>Contas</strong>, clique em <strong>Páginas</strong>.</li>
+    <li>Clique em <strong>+ Adicionar</strong> e escolha <strong>Adicionar uma Página do Facebook existente</strong>.</li>
+    <li>Digite o nome ou o endereço da Página da M Fast e clique em <strong>Avançar</strong>.</li>
+    <li>Marque a caixinha concordando com os termos e clique em <strong>Adicionar Página</strong>. Depois, <strong>Concluir</strong>.</li>
+  </ol>
+  <p>Quem já cuidava da Página antes continua com acesso normalmente.</p>
+  <p><a href="https://pt-br.facebook.com/business/help/720478807965744" target="_blank" rel="noopener">Explicação oficial da Meta sobre esta etapa</a></p>
+</section>
+
+<section id="instagram">
+  <div class="eyebrow">Etapa 3</div>
+  <h2>Colocar o Instagram dentro</h2>
+  <h3>3.1 · O Instagram precisa ser profissional</h3>
+  <p>No aplicativo do Instagram da M Fast: toque na foto do perfil, depois no menu (três risquinhos), vá em <strong>Tipo de conta e ferramentas</strong> e escolha <strong>Mudar para conta profissional</strong>. Selecione <strong>Empresa</strong>. Se já aparecer “Painel profissional” no perfil, essa parte já está feita.</p>
+  <p><a href="https://pt-br.facebook.com/business/help/502981923235522" target="_blank" rel="noopener">Como mudar para conta profissional (Meta)</a></p>
+
+  <h3>3.2 · Ligar o Instagram à Página do Facebook</h3>
+  <ol class="steps">
+    <li>No aplicativo do Instagram, toque na foto do perfil e em <strong>Editar perfil</strong>.</li>
+    <li>Role até <strong>Informações comerciais públicas</strong>.</li>
+    <li>Toque em <strong>Página</strong> e depois em <strong>Conectar ou criar</strong>.</li>
+    <li>Entre com o Facebook do dono e escolha a Página da M Fast.</li>
+  </ol>
+  <p><a href="https://pt-br.facebook.com/business/help/898752960195806" target="_blank" rel="noopener">Como ligar o Instagram à Página (Meta)</a></p>
+
+  <h3>3.3 · Adicionar o Instagram na casa da empresa</h3>
+  <ol class="steps">
+    <li>Volte nas <a href="https://business.facebook.com/latest/settings" target="_blank" rel="noopener">configurações da Meta</a>, pelo computador.</li>
+    <li>No menu da esquerda, em <strong>Contas</strong>, clique em <strong>Contas do Instagram</strong>.</li>
+    <li>Clique em <strong>Adicionar</strong> e depois em <strong>Adicionar conta do Instagram</strong>.</li>
+    <li>Vai abrir uma janela do Instagram. Coloque o usuário e a senha da M Fast e clique em <strong>Entrar</strong>. Se chegar código no celular, digite.</li>
+    <li>Clique em <strong>Confirmar</strong>.</li>
+  </ol>
+  <div class="box">
+    <span class="t">Se der erro aqui</span>
+    <p>Normalmente é porque o Instagram já está preso em outra “casa” de empresa, por exemplo de uma agência antiga ou de alguém que cuidou das redes. Cada Instagram só fica em uma por vez. Nesse caso, manda um print pra gente que orientamos a liberação.</p>
+  </div>
+  <p><a href="https://pt-br.facebook.com/business/help/620548115562686" target="_blank" rel="noopener">Explicação oficial da Meta sobre esta etapa</a></p>
+</section>
+
+<section id="anuncios">
+  <div class="eyebrow">Etapa 4</div>
+  <h2>Criar a conta de anúncios e cadastrar o pagamento</h2>
+  <p>A conta de anúncios é onde as campanhas rodam e onde fica o cartão ou a forma de pagamento da M Fast. <strong>A cobrança dos anúncios é feita direto pela Meta, no pagamento de vocês.</strong> A Zeus não mexe nessa parte.</p>
+  <ol class="steps">
+    <li>Nas <a href="https://business.facebook.com/latest/settings" target="_blank" rel="noopener">configurações da Meta</a>, no menu da esquerda, em <strong>Contas</strong>, clique em <strong>Contas de anúncios</strong>.</li>
+    <li>Clique em <strong>+ Adicionar</strong> e escolha <strong>Criar uma nova conta de anúncios</strong>.</li>
+    <li>Preencha assim:
+      <table>
+        <tr><td>Nome da conta</td><td>M Fast</td></tr>
+        <tr><td>Fuso horário</td><td>(GMT-03:00) America/Sao_Paulo</td></tr>
+        <tr><td>Moeda</td><td>Real brasileiro (BRL)</td></tr>
+      </table>
+      Confira fuso e moeda antes de avançar. Se ficar errado, dá bastante trabalho para corrigir depois.</li>
+    <li>Quando perguntar para quem é a conta, escolha <strong>Minha empresa</strong>.</li>
+    <li>Marque a caixinha concordando com os termos e clique em <strong>Criar conta de anúncios</strong>.</li>
+    <li>Na tela seguinte, clique em <strong>Adicionar informações de pagamento</strong> e cadastre o cartão ou a forma de pagamento da oficina.</li>
+  </ol>
+  <p>Se pular o pagamento nessa hora, dá pra cadastrar depois por aqui:</p>
+  <a class="btn" href="https://business.facebook.com/latest/billing_hub" target="_blank" rel="noopener">Abrir Cobrança e pagamentos</a>
+  <div class="box">
+    <span class="t">Se a M Fast já anunciou antes</span>
+    <p>Se alguém já impulsionou posts ou fez anúncio pela oficina, pode existir uma conta de anúncios antiga. Antes de criar outra, conta pra gente. Às vezes vale aproveitar a que já existe.</p>
+  </div>
+  <p><a href="https://pt-br.facebook.com/business/help/910137316041095" target="_blank" rel="noopener">Criar conta de anúncios (Meta)</a> · <a href="https://pt-br.facebook.com/business/help/132073386867900" target="_blank" rel="noopener">Cadastrar forma de pagamento (Meta)</a></p>
+</section>
+
+<section id="zeus">
+  <div class="eyebrow">Etapa 5</div>
+  <h2>Liberar o acesso da <em>Zeus</em></h2>
+  <p>É aqui que vocês dão permissão para a gente trabalhar. A Página, o Instagram e a conta de anúncios continuam sendo da M Fast.</p>
+  <p>Vocês vão precisar deste número, que é a identificação da nossa empresa dentro da Meta:</p>
+  <div class="id">
+    <code id="zeus-id">3887741578048210</code>
+    <button type="button" onclick="navigator.clipboard.writeText('3887741578048210');this.textContent='Copiado ✓'">Copiar número</button>
+  </div>
+  <div class="box">
+    <span class="t">Não estranhe o nome</span>
+    <p>Quando vocês colarem esse número, a Meta vai mostrar o nome <strong>Torque System</strong>. É a empresa da Zeus lá dentro, onde ficam as contas de todos os nossos clientes. Pode seguir.</p>
+  </div>
+  <ol class="steps">
+    <li>Nas <a href="https://business.facebook.com/latest/settings" target="_blank" rel="noopener">configurações da Meta</a>, no menu da esquerda, em <strong>Usuários</strong>, clique em <strong>Parceiros</strong>.</li>
+    <li>Clique em <strong>Adicionar</strong> e escolha <strong>Conceder a um parceiro acesso aos seus recursos</strong>.</li>
+    <li>Cole o número <strong>3887741578048210</strong> e clique em <strong>Avançar</strong>.</li>
+    <li>Agora aparece a lista do que vocês podem compartilhar. Marque cada item abaixo e, em cada um, ative <strong>Controle total</strong>:
+      <ul>
+        <li><strong>Páginas:</strong> a Página da M Fast.</li>
+        <li><strong>Contas de anúncios:</strong> a conta M Fast criada na Etapa 4.</li>
+        <li><strong>Contas do Instagram:</strong> o Instagram da M Fast.</li>
+        <li><strong>Conjuntos de dados</strong> (pode aparecer como <strong>Pixel</strong>): se já existir algum, marque também. Se não existir, tudo bem, a gente cria depois.</li>
+      </ul>
+    </li>
+    <li>Clique em <strong>Atribuir ativos</strong>. (“Ativos” é como a Meta chama a Página, o Instagram e a conta de anúncios.)</li>
+  </ol>
+  <p>Se outra pessoa também for dona da casa da empresa, a Meta pode pedir que ela aprove. É só ela aceitar o aviso que aparecer.</p>
+  <div class="box">
+    <span class="t">E o WhatsApp?</span>
+    <p>Para os anúncios levarem o cliente direto para o WhatsApp da oficina, o número também precisa estar ligado à Página. Esse ajuste a gente faz junto com vocês, numa chamada rápida, porque envolve o celular da oficina e não pode dar errado. Não precisa mexer nisso agora.</p>
+  </div>
+  <p><a href="https://pt-br.facebook.com/business/help/1717412048538897" target="_blank" rel="noopener">Explicação oficial da Meta sobre esta etapa</a></p>
+</section>
+
+<section id="conferir">
+  <div class="eyebrow">Etapa 6</div>
+  <h2>Conferir e avisar a gente</h2>
+  <p>Nas <a href="https://business.facebook.com/latest/settings" target="_blank" rel="noopener">configurações da Meta</a>, entre em <strong>Usuários → Parceiros</strong> e clique em <strong>Torque System</strong>. Devem aparecer:</p>
+  <ul class="check">
+    <li>Página do Facebook da M Fast</li>
+    <li>Instagram da M Fast</li>
+    <li>Conta de anúncios M Fast, com forma de pagamento cadastrada</li>
+    <li>Conjunto de dados, se existia algum</li>
+  </ul>
+  <div class="box ok">
+    <span class="t">Pronto</span>
+    <p>Tira um print dessa tela e manda no nosso WhatsApp. A gente confere tudo do nosso lado e avisa quando estiver certo. <strong>Não mande senha, código de verificação nem dados do cartão.</strong></p>
+  </div>
+</section>
+
+<section id="problemas">
+  <div class="eyebrow">Se algo não aparecer</div>
+  <h2>Problemas mais comuns</h2>
+  <table>
+    <tr><td>Não aparece a opção “Parceiros” ou “+ Adicionar”</td><td>O Facebook que está logado não tem controle total da casa da empresa. Entre com o Facebook de quem criou, ou peça para essa pessoa te dar controle total em <strong>Usuários → Pessoas</strong>.</td></tr>
+    <tr><td>O Instagram não entra (Etapa 3)</td><td>Ele provavelmente está em outra casa de empresa ou ainda é conta pessoal. Confira o item 3.1 e, se continuar, manda print.</td></tr>
+    <tr><td>Não deixa criar conta de anúncios</td><td>Casa de empresa nova só pode criar uma conta de anúncios no começo. Se já existe uma lá dentro, use essa.</td></tr>
+    <tr><td>A Meta pede para confirmar identidade ou documento</td><td>É verificação de segurança da própria Meta. Siga o que a tela pedir. Isso é com vocês, a gente não tem como fazer no lugar.</td></tr>
+    <tr><td>A opção está com outro nome ou em outro lugar</td><td>A Meta muda a tela de vez em quando. Manda um print que a gente te diz onde clicar.</td></tr>
+  </table>
+</section>
+
+<section>
+  <div class="eyebrow">Links usados neste guia</div>
+  <h2>Tudo em um lugar</h2>
+  <ul>
+    <li><a href="https://business.facebook.com/latest/settings" target="_blank" rel="noopener">Configurações da Meta (casa da empresa)</a></li>
+    <li><a href="https://www.facebook.com/pages/create" target="_blank" rel="noopener">Criar Página do Facebook</a></li>
+    <li><a href="https://business.facebook.com/latest/billing_hub" target="_blank" rel="noopener">Cobrança e pagamentos</a></li>
+    <li><a href="https://accountscenter.facebook.com/password_and_security" target="_blank" rel="noopener">Verificação em duas etapas do Facebook</a></li>
+    <li>Ajuda oficial da Meta:
+      <a href="https://pt-br.facebook.com/business/help/1710077379203657" target="_blank" rel="noopener">criar portfólio</a> ·
+      <a href="https://pt-br.facebook.com/business/help/720478807965744" target="_blank" rel="noopener">adicionar Página</a> ·
+      <a href="https://pt-br.facebook.com/business/help/502981923235522" target="_blank" rel="noopener">Instagram profissional</a> ·
+      <a href="https://pt-br.facebook.com/business/help/898752960195806" target="_blank" rel="noopener">ligar Instagram à Página</a> ·
+      <a href="https://pt-br.facebook.com/business/help/620548115562686" target="_blank" rel="noopener">adicionar Instagram</a> ·
+      <a href="https://pt-br.facebook.com/business/help/910137316041095" target="_blank" rel="noopener">conta de anúncios</a> ·
+      <a href="https://pt-br.facebook.com/business/help/132073386867900" target="_blank" rel="noopener">forma de pagamento</a> ·
+      <a href="https://pt-br.facebook.com/business/help/1717412048538897" target="_blank" rel="noopener">liberar acesso ao parceiro</a>
+    </li>
+  </ul>
+</section>
+</main>
+<footer>Zeus Agência Digital · contato@zeusagenciadigital.com · Qualquer dúvida no caminho, chama a gente no WhatsApp.</footer>
+</body>
+</html>
