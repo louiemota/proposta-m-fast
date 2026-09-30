@@ -16,7 +16,7 @@ a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--red);te
 a:hover{color:var(--red)}
 header{height:80px;padding:0 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#0b0b0df5;position:sticky;top:0;z-index:20}
 .brand{font:800 30px/.85 'Barlow Condensed',sans-serif;letter-spacing:.04em;text-decoration:none}
-.brand span{display:block;font:600 9px/1.5 Barlow,sans-serif;letter-spacing:.15em;margin-top:7px}
+.brand img{display:block;height:50px;width:auto}.brand span{display:block;font:600 9px/1.5 Barlow,sans-serif;letter-spacing:.15em;margin-top:7px}
 header .who{font-size:14px;color:var(--muted)}
 main{max-width:880px;margin:0 auto;padding:0 6%}
 section{padding:64px 0;border-bottom:1px solid var(--line)}
@@ -56,13 +56,13 @@ table{width:100%;border-collapse:collapse;margin:20px 0;font-size:16px}
 td{border-top:1px solid var(--line);padding:12px 10px 12px 0;vertical-align:top;color:var(--muted)}
 td:first-child{color:var(--ink);font-weight:600;width:42%}
 footer{max-width:880px;margin:0 auto;padding:40px 6% 70px;color:var(--muted);font-size:15px}
-@media(max-width:560px){body{font-size:17px}header{height:68px}header .who{display:none}section{padding:48px 0}ol.steps>li{padding-left:46px}.id code{font-size:25px}}
+@media(max-width:560px){body{font-size:17px}header{height:68px}.brand img{height:40px}header .who{display:none}section{padding:48px 0}ol.steps>li{padding-left:46px}.id code{font-size:25px}}
 @media print{header{position:static}body{background:#fff;color:#000}p,li,td,ul{color:#222!important}.box,.id,.toc a{background:#f4f4f4}}
 </style>
 </head>
 <body>
 <header>
-  <a class="brand" href="https://zeusagenciadigital.com" style="color:var(--ink)">ZEUS<span>AGÊNCIA DIGITAL</span></a>
+  <a class="brand" href="https://zeusagenciadigital.com"><img src="zeus-logo.png" alt="Zeus Agência Digital" width="156" height="50"></a>
   <div class="who">Guia preparado para a M Fast</div>
 </header>
 <main>
