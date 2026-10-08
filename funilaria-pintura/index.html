@@ -86,6 +86,8 @@ a.header-button{display:inline-flex;align-items:center;text-decoration:none}a.wh
 #consent-settings .consent-actions{margin-top:20px}
 body:has(.consent-banner:not([hidden])) .mobile-cta{visibility:hidden}
 @media(max-width:700px){.consent-banner{flex-direction:column;align-items:stretch;bottom:12px;padding:16px}.consent-actions .consent-primary,.consent-actions .consent-secondary{flex:1}}
+
+.svc-proof-img img,.why-proof img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
 </style><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});gtag('set','url_passthrough',true);gtag('set','ads_data_redaction',true);try{var c=JSON.parse(localStorage.getItem('mfast.consent.v1')||'null');if(c&&c.expiresAt>Date.now()&&c.ads){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted'});}}catch(e){}gtag('js',new Date());gtag('config','AW-18234855649');</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-18234855649"></script></head>
 <body id="top"><a class="skip" href="#principal">Ir para o conteúdo</a>
 
@@ -121,12 +123,12 @@ body:has(.consent-banner:not([hidden])) .mobile-cta{visibility:hidden}
 
 <section aria-labelledby="consent-title" class="consent-banner" hidden="" id="consent-banner"><h2 class="sr-only" id="consent-title">Cookies</h2><p>Usamos um cookie opcional do Google Ads pra saber qual anúncio trouxe o seu contato. Aceite, recuse ou escolha.</p><div class="consent-actions"><button class="consent-secondary" data-consent-open="" type="button">Preferências</button><button class="consent-primary" data-consent="deny" type="button">Recusar</button><button class="consent-primary" data-consent="accept" type="button">Aceitar</button></div></section><dialog aria-labelledby="consent-settings-title" id="consent-settings"><div class="dialog-head"><span>Privacidade</span><button aria-label="Fechar" class="close-dialog" data-close="" type="button">×</button></div><div class="dialog-body"><h2 id="consent-settings-title" tabindex="-1">Personalizar cookies</h2><p>Escolha o que permitir. A página e o WhatsApp funcionam com tudo desligado.</p><div class="consent-cat"><h3>Necessários (sempre ativos)</h3><p>Guardam a sua escolha sobre cookies por 6 meses. Não medem visitas.</p></div><div class="consent-cat"><label><input id="consent-ads" type="checkbox"/> Anúncios</label><p>Google Ads. Mostra qual anúncio trouxe o seu contato quando você toca no WhatsApp. Não guardamos nome nem telefone e não usamos para remarketing nem anúncios personalizados. Sem a sua permissão, o Google recebe só sinais sem cookie.</p></div><p>Você pode mudar a escolha quando quiser em “Preferências de privacidade”, no rodapé.</p><div class="consent-actions"><button class="consent-primary" data-consent="accept" type="button">Aceitar</button><button class="consent-primary" data-consent="deny" type="button">Recusar</button><button class="consent-secondary" data-consent="save" type="button">Salvar escolha</button></div></div></dialog><script>'use strict';
 const SERVICE="funilaria e pintura";
+const MSG_TEMPLATE="Ol\u00e1! Vim pela p\u00e1gina da MFAST{origin}. Quero avaliar um reparo de funilaria e pintura. Posso informar modelo, ano, bairro e enviar fotos.";
 const params = new URLSearchParams(location.search);
 const ORIGINS = {google: 'Google', instagram: 'Instagram', facebook: 'Facebook', meta: 'Facebook'};
 const origin = ['gclid', 'gbraid', 'wbraid'].some(key => params.has(key))
   ? 'Google' : (Object.hasOwn(ORIGINS, (params.get('utm_source') || '').toLowerCase()) ? ORIGINS[(params.get('utm_source') || '').toLowerCase()] : null);
-const message = 'Olá! Vim pela página da MFAST' + (origin ? ' (' + origin + ')' : '')
-  + '. Quero avaliar um reparo de ' + SERVICE + '. Posso informar modelo, ano, bairro e enviar fotos.';
+const message = MSG_TEMPLATE.replace('{origin}', origin ? ' (' + origin + ')' : '');
 
 // O endereço já está completo antes de qualquer clique, toque longo ou nova aba.
 document.querySelectorAll('.svc-cross a').forEach(link => {
